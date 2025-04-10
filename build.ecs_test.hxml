@@ -1,10 +1,12 @@
 
 
--D HXCPP_SILENT
+#-D HXCPP_SILENT
+-D HXCPP_QUIET
+#-D HXCPP_VERBOSE
+
 -D analyzer-optimize
 --dce full
 
-#-D HXCPP_VERBOSE
 #-D HXCPP_DEBUG_LINK
 #--debug
 #--verbose

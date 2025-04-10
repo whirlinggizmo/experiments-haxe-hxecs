@@ -1,5 +1,7 @@
+#-D HXCPP_SILENT
+-D HXCPP_QUIET
+#-D HXCPP_VERBOSE
 
--D HXCPP_SILENT
 -D analyzer-optimize
 --dce full
 

@@ -37,6 +37,7 @@ interface sys.db.Connection
 class sys.FileSystem
 class hxcore.util.UpdateHandler
 class hxcore.util.TypeUtils
+class hxcore.util.PathUtils
 class hxcore.util.MathUtils
 class hxcore.util.FPSCounter
 class hxcore.scripting.ScriptLoader
@@ -259,5 +260,6 @@ file hxcore/scripting/ScriptHost.hx /home/rknopf/projects/whirlinggizmo/experime
 file hxcore/scripting/ScriptLoader.cpp.hx /home/rknopf/projects/whirlinggizmo/experiments/haxe/hxecs/hxcore/scripting/ScriptLoader.cpp.hx
 file hxcore/util/FPSCounter.hx /home/rknopf/projects/whirlinggizmo/experiments/haxe/hxcore/src/hxcore/util/FPSCounter.hx
 file hxcore/util/MathUtils.hx /home/rknopf/projects/whirlinggizmo/experiments/haxe/hxcore/src/hxcore/util/MathUtils.hx
+file hxcore/util/PathUtils.hx /home/rknopf/projects/whirlinggizmo/experiments/haxe/hxcore/src/hxcore/util/PathUtils.hx
 file hxcore/util/TypeUtils.hx /home/rknopf/projects/whirlinggizmo/experiments/haxe/hxcore/src/hxcore/util/TypeUtils.hx
 file hxcore/util/UpdateHandler.hx /home/rknopf/projects/whirlinggizmo/experiments/haxe/hxcore/src/hxcore/util/UpdateHandler.hx
