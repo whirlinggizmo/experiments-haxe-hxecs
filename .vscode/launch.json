@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "HXCPP",
+            "type": "hxcpp",
+            "request": "launch",
+            
+            // grrr!  hxcpp debugger for vscode doesn't allow specifying a working directory, nor args
+            //"program": "${workspaceFolder}/example/dist/scripttest/ScriptTest",
+            // "cwd": "${workspaceFolder}/example/out/scripttest",
+            // "args": [
+            //    "--rootDir", "${workspaceFolder}/example",
+            //    "--sourceDir", "${workspaceFolder}/example/scripts",
+            //    "--scriptDir", "${workspaceFolder}/example/dist/scripts"
+            // ]
+            // so instead, we use a shell script to launch it:
+            "program": "${workspaceFolder}/launch.sh",
+        }
+    ]
+}

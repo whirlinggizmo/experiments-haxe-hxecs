@@ -1,0 +1,41 @@
+
+
+-D HXCPP_SILENT
+-D analyzer-optimize
+--dce full
+
+#-D HXCPP_VERBOSE
+#-D HXCPP_DEBUG_LINK
+#--debug
+#--verbose
+# vscode debugger
+#-lib hxcpp-debug-server
+#--dce no
+
+-D HXCPP_M64
+-D HXCPP_CATCH_SEGV
+-D hxcpp_smart_strings
+
+-lib hxcore
+-cp src
+-cp lib
+
+--each
+
+--cmd echo "ECSTest: Building..."
+--next
+
+-main ECSTest
+--cpp out/ecs_test
+-D HXCPP_M64
+--next
+
+# copy the executable to the dist directory
+--cmd mkdir -p dist
+--cmd pkill -9 ECSTest || true
+--cmd cp out/ecs_test/ECSTest dist/ECSTest
+--next
+
+--cmd echo ""
+--cmd echo "ECSTest: Build complete."
+

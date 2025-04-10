@@ -1,0 +1,7 @@
+build.ecs_test.hxml
+--next
+build.script_test.hxml
+--next
+
+--cmd echo ""
+--cmd echo "Done!"
